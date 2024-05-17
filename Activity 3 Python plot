@@ -1,0 +1,12 @@
+Collaboration with Arevalo, Descutido and Tebelin
+import numpy as np
+import matplotlib.pyplot as plt
+prior_probs = np.array([[0.33, 0.3], [0.2, 0.17]])
+plt.imshow(prior_probs, cmap=&#39;gray&#39;)
+plt.colorbar()
+for i in range(2):
+for j in range(2):
+plt.annotate(prior_probs[i, j], (j, i), color=&quot;red&quot;, fontsize=20,
+fontweight=&#39;bold&#39;, ha=&#39;center&#39;, va=&#39;center&#39;)
+plt.title(&#39;Prior Probabilities&#39;, fontsize=20)
+plt.show()
